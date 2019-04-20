@@ -1,7 +1,7 @@
 .. _intro-install:
 
 ==================
-Installation guide
+安装指南
 ==================
 
 Installing Scrapy
