@@ -1,23 +1,18 @@
 .. _topics-index:
 
 ==============================
-Scrapy |version| documentation
+Scrapy |version| 中文文档
 ==============================
 
-Scrapy is a fast high-level `web crawling`_ and `web scraping`_ framework, used
-to crawl websites and extract structured data from their pages. It can be used
-for a wide range of purposes, from data mining to monitoring and automated
-testing.
+Scrapy是一个快速、高效率的网络爬虫框架，用于抓取web站点并从页面中提取结构化的数据。
+Scrapy被广泛用于数据挖掘、监测和自动化测试。
 
-.. _web crawling: https://en.wikipedia.org/wiki/Web_crawler
-.. _web scraping: https://en.wikipedia.org/wiki/Web_scraping
-
-Getting help
+获得帮助
 ============
 
-Having trouble? We'd like to help!
+遇到困难了？我们乐意帮您解决！
 
-* Try the :doc:`FAQ <faq>` -- it's got answers to some common questions.
+* Try the :doc:`FAQ <faq>` -- 这里有一些常见问题的解答。
 * Looking for specific information? Try the :ref:`genindex` or :ref:`modindex`.
 * Ask or search questions in `StackOverflow using the scrapy tag`_.
 * Ask or search questions in the `Scrapy subreddit`_.
