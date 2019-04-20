@@ -1,7 +1,7 @@
 .. _intro-tutorial:
 
 ===============
-Scrapy Tutorial
+Scrapy 教程
 ===============
 
 In this tutorial, we'll assume that Scrapy is already installed on your system.
