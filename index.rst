@@ -140,7 +140,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     使用web服务监视和控制爬虫程序。
 
 
-Solving specific problems
+解决具体问题
 =========================
 
 .. toctree::
@@ -198,7 +198,7 @@ Solving specific problems
 
 .. _extending-scrapy:
 
-Extending Scrapy
+Scrapy 扩展
 ================
 
 .. toctree::

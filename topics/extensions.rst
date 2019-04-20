@@ -1,7 +1,7 @@
 .. _topics-extensions:
 
 ==========
-Extensions
+扩展
 ==========
 
 The extensions framework provides a mechanism for inserting your own
