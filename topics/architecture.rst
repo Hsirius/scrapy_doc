@@ -1,7 +1,7 @@
 .. _topics-architecture:
 
 =====================
-Architecture overview
+架构体系
 =====================
 
 This document describes the architecture of Scrapy and how its components

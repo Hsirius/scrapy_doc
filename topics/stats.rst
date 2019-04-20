@@ -1,7 +1,7 @@
 .. _topics-stats:
 
 ================
-Stats Collection
+统计数据集合
 ================
 
 Scrapy provides a convenient facility for collecting stats in the form of

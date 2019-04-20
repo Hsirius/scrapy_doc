@@ -1,7 +1,7 @@
 .. _topics-deploy:
 
 =================
-Deploying Spiders
+部署爬虫器
 =================
 
 This section describes the different options you have for deploying your Scrapy

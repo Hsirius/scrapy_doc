@@ -1,7 +1,7 @@
 .. _topics-debug:
 
 =================
-Debugging Spiders
+Debug 爬虫器
 =================
 
 This document explains the most common techniques for debugging spiders.

@@ -1,7 +1,7 @@
 .. _topics-downloader-middleware:
 
 =====================
-Downloader Middleware
+下载器中间件
 =====================
 
 The downloader middleware is a framework of hooks into Scrapy's

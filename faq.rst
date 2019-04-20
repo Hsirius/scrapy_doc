@@ -1,6 +1,6 @@
 .. _faq:
 
-Frequently Asked Questions
+常见问答
 ==========================
 
 .. _faq-scrapy-bs-cmp:

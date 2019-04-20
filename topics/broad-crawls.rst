@@ -1,7 +1,7 @@
 .. _topics-broad-crawls:
 
 ============
-Broad Crawls
+并发爬虫
 ============
 
 Scrapy defaults are optimized for crawling specific sites. These sites are

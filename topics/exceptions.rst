@@ -1,7 +1,7 @@
 .. _topics-exceptions:
 
 ==========
-Exceptions
+异常
 ==========
 
 .. module:: scrapy.exceptions

@@ -78,7 +78,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     了解如何通过命令行管理Scrapy项目。
 
 :doc:`topics/spiders`
-    编写网站爬虫规则。
+    定义网站爬虫规则。
 
 :doc:`topics/selectors`
     使用Xpath从网页中提取数据。
@@ -191,7 +191,7 @@ Solving specific problems
     根据负载动态调整爬行速度。
 
 :doc:`topics/benchmarking`
-    检查一下Scrapy在硬件上的表现。
+    检查一下Scrapy在硬件上的性能。
 
 :doc:`topics/jobs`
     学习如何暂停并继续大型的爬虫器。
@@ -254,4 +254,4 @@ Extending Scrapy
     了解如何为Scrapy仓库贡献代码。
 
 :doc:`versioning`
-    了解混乱的版本控制和API的稳定性。
+    了解Scrapy的版本控制和API的稳定性。

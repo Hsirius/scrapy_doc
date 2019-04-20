@@ -1,7 +1,7 @@
 .. _topics-telnetconsole:
 
 ==============
-Telnet Console
+远程控制台
 ==============
 
 .. module:: scrapy.extensions.telnet

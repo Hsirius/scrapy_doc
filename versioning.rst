@@ -1,7 +1,7 @@
 .. _versioning:
 
 ============================
-Versioning and API Stability
+版本控制和API稳定性
 ============================
 
 Versioning

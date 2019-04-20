@@ -1,7 +1,7 @@
 .. _topics-settings:
 
 ========
-Settings
+设置
 ========
 
 The Scrapy settings allows you to customize the behaviour of all Scrapy

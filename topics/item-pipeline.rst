@@ -1,7 +1,7 @@
 .. _topics-item-pipeline:
 
 =============
-Item Pipeline
+Item 管道
 =============
 
 After an item has been scraped by a spider, it is sent to the Item Pipeline

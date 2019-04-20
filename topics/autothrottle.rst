@@ -1,7 +1,7 @@
 .. _topics-autothrottle:
 
 ======================
-AutoThrottle extension
+爬虫器节流
 ======================
 
 This is an extension for automatically throttling crawling speed based on load

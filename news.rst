@@ -1,6 +1,6 @@
 .. _news:
 
-Release notes
+Scrapy更新
 =============
 
 .. _release-1.6.0:

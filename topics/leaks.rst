@@ -1,7 +1,7 @@
 .. _topics-leaks:
 
 ======================
-Debugging memory leaks
+内存泄漏调试
 ======================
 
 In Scrapy, objects such as Requests, Responses and Items have a finite

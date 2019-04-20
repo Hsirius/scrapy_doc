@@ -1,7 +1,7 @@
 .. _topics-media-pipeline:
 
 ===========================================
-Downloading and processing files and images
+下载并处理文件和图片
 ===========================================
 
 .. currentmodule:: scrapy.pipelines.images

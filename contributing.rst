@@ -1,7 +1,7 @@
 .. _topics-contributing:
 
 ======================
-Contributing to Scrapy
+贡献Scrapy代码
 ======================
 
 .. important::

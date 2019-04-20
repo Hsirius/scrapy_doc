@@ -1,7 +1,7 @@
 .. _topics-signals:
 
 =======
-Signals
+信号
 =======
 
 Scrapy uses signals extensively to notify when certain events occur. You can

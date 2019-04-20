@@ -1,7 +1,7 @@
 .. _topics-developer-tools:
 
 =================================================
-Using your browser's Developer Tools for scraping
+使用浏览器的开发工具进行抓取
 =================================================
 
 Here is a general guide on how to use your browser's Developer Tools

@@ -1,7 +1,7 @@
 .. _topics-jobs:
 
 =================================
-Jobs: pausing and resuming crawls
+作业:暂停并恢复爬行
 =================================
 
 Sometimes, for big sites, it's desirable to pause crawls and be able to resume

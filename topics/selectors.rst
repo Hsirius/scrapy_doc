@@ -1,7 +1,7 @@
 .. _topics-selectors:
 
 =========
-Selectors
+选择器
 =========
 
 When you're scraping web pages, the most common task you need to perform is

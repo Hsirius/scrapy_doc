@@ -1,7 +1,7 @@
 .. _topics-exporters:
 
 ==============
-Item Exporters
+Item 导出文件
 ==============
 
 .. module:: scrapy.exporters

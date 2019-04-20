@@ -1,7 +1,7 @@
 .. _topics-loaders:
 
 ============
-Item Loaders
+Item 加载器
 ============
 
 .. module:: scrapy.loader

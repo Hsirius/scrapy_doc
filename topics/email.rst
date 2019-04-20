@@ -1,7 +1,7 @@
 .. _topics-email:
 
 ==============
-Sending e-mail
+发送邮件
 ==============
 
 .. module:: scrapy.mail

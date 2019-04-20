@@ -1,7 +1,7 @@
 .. _topics-request-response:
 
 ======================
-Requests and Responses
+请求和响应
 ======================
 
 .. module:: scrapy.http

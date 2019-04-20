@@ -1,7 +1,7 @@
 .. _topics-spiders:
 
 =======
-Spiders
+爬虫器
 =======
 
 Spiders are classes which define how a certain site (or a group of sites) will be

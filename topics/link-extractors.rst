@@ -1,7 +1,7 @@
 .. _topics-link-extractors:
 
 ===============
-Link Extractors
+链接提取
 ===============
 
 Link extractors are objects whose only purpose is to extract links from web

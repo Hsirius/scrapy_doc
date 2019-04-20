@@ -1,7 +1,7 @@
 .. _topics-practices:
 
 ================
-Common Practices
+常见实践
 ================
 
 This section documents common practices when using Scrapy. These are things

@@ -1,7 +1,7 @@
 .. _topics-api:
 
 ========
-Core API
+核心API
 ========
 
 .. versionadded:: 0.15

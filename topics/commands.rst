@@ -1,7 +1,7 @@
 .. _topics-commands:
 
 =================
-Command line tool
+命令行工具
 =================
 
 .. versionadded:: 0.10

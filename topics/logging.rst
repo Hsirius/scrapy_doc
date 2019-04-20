@@ -1,7 +1,7 @@
 .. _topics-logging:
 
 =======
-Logging
+日志
 =======
 
 .. note::
