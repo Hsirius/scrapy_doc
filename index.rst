@@ -12,8 +12,8 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
 
 遇到困难了？我们乐意帮您解决！
 
-* Try the :doc:`FAQ <faq>` -- 这里有一些常见问题的解答。
-* Looking for specific information? Try the :ref:`genindex` or :ref:`modindex`.
+* 试试 :doc:`FAQ <faq>` -- 这里有一些常见问题的解答。
+* 寻找具体信息? 试试 :ref:`genindex` or :ref:`modindex`.
 * Ask or search questions in `StackOverflow using the scrapy tag`_.
 * Ask or search questions in the `Scrapy subreddit`_.
 * Search for questions on the archives of the `scrapy-users mailing list`_.
@@ -27,11 +27,11 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
 .. _issue tracker: https://github.com/scrapy/scrapy/issues
 
 
-First steps
+第一步
 ===========
 
 .. toctree::
-   :caption: First steps
+   :caption: 第一步
    :hidden:
 
    intro/overview
@@ -40,13 +40,13 @@ First steps
    intro/examples
 
 :doc:`intro/overview`
-    Understand what Scrapy is and how it can help you.
+    了解什么是Scrapy,它是如何帮助你的。
 
 :doc:`intro/install`
-    Get Scrapy installed on your computer.
+    在你的电脑上安装Scrapy。
 
 :doc:`intro/tutorial`
-    Write your first Scrapy project.
+    编写你的第一个Scrapy项目。
 
 :doc:`intro/examples`
     Learn more by playing with a pre-made Scrapy project.
