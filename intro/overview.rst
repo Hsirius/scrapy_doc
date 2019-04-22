@@ -89,7 +89,7 @@ Scrapy爬虫器的例子。
 .. note::
 
     本例中 :ref:`导出 <topics-feed-exports>` 了一个JSON文件,你可以轻易地更改输出格式（比如XML 或者 CSV）或者
-    储存到后端（比如FTP或者`Amazon S3`_ ）。你同样可以定义一个 :ref:`item 管道 <topics-item-pipeline>`
+    储存到后端（比如FTP或者 `Amazon S3`_ ）。你同样可以定义一个 :ref:`item 管道 <topics-item-pipeline>`
     把这些 item 储存到数据库中。
 
 .. _topics-whatelse:
@@ -126,7 +126,7 @@ Scrapy还为爬虫提供了很多强大的功能，比如：
 * 一个 :ref:`远程控制台 <topics-telnetconsole>` 用于连接运行在Scrapy进程的Python控制台,
   以便于自省和调试爬虫程序。
 
-* 还有其他好东西，比如从`Sitemaps`_ and XML/CSV 源导入可复用的爬虫, 一个可以自动下载图片（或者其他和items关联的媒体文件）的
+* 还有其他好东西，比如从 `Sitemaps`_ and XML/CSV 源导入可复用的爬虫, 一个可以自动下载图片（或者其他和items关联的媒体文件）的
   :ref:`媒体中间件<topics-media-pipeline>`,一个DNS缓存解析器, 以及更多!
 
 下一步?
