@@ -94,7 +94,7 @@ Scrapy爬虫器的例子。
 
 .. _topics-whatelse:
 
-What else?
+还有什么?
 ==========
 
 你已经知道了如何用Scrapy从一个站点提取和储存item，但是仅仅是很浅显的了解它。
