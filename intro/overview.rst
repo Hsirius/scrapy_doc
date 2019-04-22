@@ -68,94 +68,72 @@ Scrapy爬虫器的例子。
 在此期间发生了什么？
 -------------------
 
-When you ran the command ``scrapy runspider quotes_spider.py``, Scrapy looked for a
-Spider definition inside it and ran it through its crawler engine.
+当您运行 ``scrapy runspider quotes_spider.py`` 命令之后, Scrapy 会找到定义的爬虫器，
+然后通过爬虫引擎运行它们。
 
-The crawl started by making requests to the URLs defined in the ``start_urls``
-attribute (in this case, only the URL for quotes in *humor* category)
-and called the default callback method ``parse``, passing the response object as
-an argument. In the ``parse`` callback, we loop through the quote elements
-using a CSS Selector, yield a Python dict with the extracted quote text and author,
-look for a link to the next page and schedule another request using the same
-``parse`` method as callback.
+爬虫是通过发送请求给 ``start_urls`` 属性中定义的 url(在本例中，就是 *humor* 分类下的
+那些 url)
+然后调用默认的回调函数 ``parse``，并把响应的对象作为参数传给它。在 ``parse`` 回调函数中，
+我们使用 CSS 选择器遍历quote元素，并把解析的引用名言和作者生成一个字典通过生成器返回，
+寻找并请求下一个链接且继续使用 ``parse`` 方法作为回调函数。
 
-Here you notice one of the main advantages about Scrapy: requests are
-:ref:`scheduled and processed asynchronously <topics-architecture>`.  This
-means that Scrapy doesn't need to wait for a request to be finished and
-processed, it can send another request or do other things in the meantime. This
-also means that other requests can keep going even if some request fails or an
-error happens while handling it.
+这里你可以注意到Scrapy的一个主要的优势：:ref:`请求的调度是异步的 <topics-architecture>`。
+这意味着Scrapy不需要等待一个请求被完成处理，它可以同时发送另一个请求或者做一些其他事情。
+这也同样表明当一些请求失败或者处理发生错误时其他请求可以继续进行下去。
 
-While this enables you to do very fast crawls (sending multiple concurrent
-requests at the same time, in a fault-tolerant way) Scrapy also gives you
-control over the politeness of the crawl through :ref:`a few settings
-<topics-settings-ref>`. You can do things like setting a download delay between
-each request, limiting amount of concurrent requests per domain or per IP, and
-even :ref:`using an auto-throttling extension <topics-autothrottle>` that tries
-to figure out these automatically.
+虽然这使得你可以非常快速地进行爬虫（同时可以并发多个请求，在可承载的压力下），
+不过Scrapy同样提供了优雅的爬虫方法，:ref:`简单地配置即可 <topics-settings-ref>`。
+你也可以设置一些其他的参数，比如给下载器设置一个延迟，限制每个域名或者代理IP的并发量，
+甚至可以让Scrapy自动根据请求的响应情况进行:ref:`限流 <topics-autothrottle>`。
 
 .. note::
 
-    This is using :ref:`feed exports <topics-feed-exports>` to generate the
-    JSON file, you can easily change the export format (XML or CSV, for example) or the
-    storage backend (FTP or `Amazon S3`_, for example).  You can also write an
-    :ref:`item pipeline <topics-item-pipeline>` to store the items in a database.
-
+    本例中 :ref:`导出 <topics-feed-exports>` 了一个JSON文件,你可以轻易地更改输出格式（比如XML 或者 CSV）或者
+    储存到后端（比如FTP或者`Amazon S3`_ ）。你同样可以定义一个:ref:`item 管道 <topics-item-pipeline>`
+    把这些 item 储存到数据库中。
 
 .. _topics-whatelse:
 
 What else?
 ==========
 
-You've seen how to extract and store items from a website using Scrapy, but
-this is just the surface. Scrapy provides a lot of powerful features for making
-scraping easy and efficient, such as:
+你已经知道了如何用Scrapy从一个站点提取和储存item，但是仅仅是很浅显的了解它。
+Scrapy还为爬虫提供了很多强大的功能，比如：
 
-* Built-in support for :ref:`selecting and extracting <topics-selectors>` data
-  from HTML/XML sources using extended CSS selectors and XPath expressions,
-  with helper methods to extract using regular expressions.
+* 用内置的 CSS 选择器和 XPath 语法从 HTML/XML 源中:ref:`选择和解析数据 <topics-selectors>`。
+  甚至可以在其中使用正则表达式来辅助解析。
 
-* An :ref:`interactive shell console <topics-shell>` (IPython aware) for trying
-  out the CSS and XPath expressions to scrape data, very useful when writing or
-  debugging your spiders.
+* 一个 :ref:`交互控制台 <topics-shell>` (IPython aware)，可以用CSS选择器和XPath语法来解析数据，
+  在编写和调试爬虫器的时候十分方便。
 
-* Built-in support for :ref:`generating feed exports <topics-feed-exports>` in
-  multiple formats (JSON, CSV, XML) and storing them in multiple backends (FTP,
-  S3, local filesystem)
+* 内置支持 :ref:`生成输出 <topics-feed-exports>` 多种格式文件 (JSON, CSV, XML) 和多种后端存储 (FTP,
+  S3, 本地文件系统)。
 
-* Robust encoding support and auto-detection, for dealing with foreign,
-  non-standard and broken encoding declarations.
+* 强大的编码支持和检测,用于处理外部的，不标准的或者损坏的编码。
 
-* :ref:`Strong extensibility support <extending-scrapy>`, allowing you to plug
-  in your own functionality using :ref:`signals <topics-signals>` and a
-  well-defined API (middlewares, :ref:`extensions <topics-extensions>`, and
-  :ref:`pipelines <topics-item-pipeline>`).
+* :ref:`强大的扩展 <extending-scrapy>`, 允许你植入自己写的函数，:ref:`信号 <topics-signals>` 和定义好
+  的 API(中间件, :ref:`扩展 <topics-extensions>`, 以及:ref:`管道 <topics-item-pipeline>`)。
 
-* Wide range of built-in extensions and middlewares for handling:
+* 广泛的内置扩展功能和中间件处理:
 
-  - cookies and session handling
-  - HTTP features like compression, authentication, caching
-  - user-agent spoofing
-  - robots.txt
-  - crawl depth restriction
-  - and more
+  - 处理cookies和session
+  - HTTP特性包括压缩、身份验证以及缓存
+  - 模拟user-agent
+  - robots.txt协议
+  - 爬虫深度限制
+  - 更多
 
-* A :ref:`Telnet console <topics-telnetconsole>` for hooking into a Python
-  console running inside your Scrapy process, to introspect and debug your
-  crawler
+* 一个 :ref:`远程控制台 <topics-telnetconsole>` 用于连接运行在Scrapy进程的Python控制台,
+  以便于自省和调试爬虫程序。
 
-* Plus other goodies like reusable spiders to crawl sites from `Sitemaps`_ and
-  XML/CSV feeds, a media pipeline for :ref:`automatically downloading images
-  <topics-media-pipeline>` (or any other media) associated with the scraped
-  items, a caching DNS resolver, and much more!
+* 还有其他好东西，比如从`Sitemaps`_ and XML/CSV 源导入可复用的爬虫, 一个可以自动下载图片（或者其他和items关联的媒体文件）:ref:`
+  的媒体中间件<topics-media-pipeline>`,一个DNS缓存解析器, 以及更多!
 
-What's next?
+下一步?
 ============
 
-The next steps for you are to :ref:`install Scrapy <intro-install>`,
-:ref:`follow through the tutorial <intro-tutorial>` to learn how to create
-a full-blown Scrapy project and `join the community`_. Thanks for your
-interest!
+你下一步要做的就是 :ref:`下载 Scrapy <intro-install>`,
+:ref:`跟着教程 <intro-tutorial>` 去创建一个完整的Scrapy工程 并且 `join the community`_. 感谢您的关注!
 
 .. _join the community: https://scrapy.org/community/
 .. _web scraping: https://en.wikipedia.org/wiki/Web_scraping

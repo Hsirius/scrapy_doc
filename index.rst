@@ -134,7 +134,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     当某些事件发生时发送电子邮件通知。
 
 :doc:`topics/telnetconsole`
-    使用内置的Python控制台检查正在运行的爬行器。
+    使用内置的Python控制台检查正在运行的爬虫器。
 
 :doc:`topics/webservice`
     使用web服务监视和控制爬虫程序。
@@ -167,7 +167,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     了解如何Debug调试您的Scrapy爬虫常见问题。
 
 :doc:`topics/contracts`
-    了解如何使用约束条件来测试您的爬虫spiders。
+    了解如何使用约束条件来测试您的爬虫爬虫器。
 
 :doc:`topics/practices`
     熟悉一些Scrapy常见的实践案例。
@@ -179,7 +179,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     学习如何使用浏览器的开发工具抓取。
 
 :doc:`topics/leaks`
-    学习查找和删除爬行器中的内存泄漏。
+    学习查找和删除爬虫器中的内存泄漏。
 
 :doc:`topics/media-pipeline`
     从抓取到数据中下载您在item中定义过的文件和图片。
@@ -188,7 +188,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     部署您的Scrapy爬虫器并在远程服务器上运行它们。
 
 :doc:`topics/autothrottle`
-    根据负载动态调整爬行速度。
+    根据负载动态调整爬虫速度。
 
 :doc:`topics/benchmarking`
     检查一下Scrapy在硬件上的性能。
