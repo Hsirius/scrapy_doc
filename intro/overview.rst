@@ -8,8 +8,8 @@ Scrapy是一个用于抓取和提取web站点的结构化数据的应用框架
 ，可用于广泛的有用的应用程序，如
 数据挖掘、信息处理或历史档案。
 
-尽管Scrapy最初是为 `web scraping`_ 而设计的, 但它也可以用API提取数据
- (例如 `Amazon Associates Web Services`_) 或者作为一个通用的网络爬虫。
+尽管Scrapy最初是为 `web scraping`_ 而设计的, 但它也可以用API提取数据(例如
+`Amazon Associates Web Services`_)或者作为一个通用的网络爬虫。
 
 浏览爬虫器例子
 =================================
@@ -126,7 +126,7 @@ Scrapy还为爬虫提供了很多强大的功能，比如：
 * 一个 :ref:`远程控制台 <topics-telnetconsole>` 用于连接运行在Scrapy进程的Python控制台,
   以便于自省和调试爬虫程序。
 
-* 还有其他好东西，比如从`Sitemaps`_ and XML/CSV 源导入可复用的爬虫, 一个可以自动下载图片（或者其他和items关联的媒体文件）的 
+* 还有其他好东西，比如从`Sitemaps`_ and XML/CSV 源导入可复用的爬虫, 一个可以自动下载图片（或者其他和items关联的媒体文件）的
   :ref:`媒体中间件<topics-media-pipeline>`,一个DNS缓存解析器, 以及更多!
 
 下一步?
