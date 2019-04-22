@@ -105,7 +105,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     便捷的类，用于提取页面中的超链接并继续跟进。
 
 :doc:`topics/settings`
-    了解如何配置Scrapy和查看所有的 :ref:`available settings <topics-settings-ref>`.
+    了解如何配置Scrapy和查看所有的 :ref:`可用配置 <topics-settings-ref>`.
 
 :doc:`topics/exceptions`
     查看所有可用的异常及其含义。

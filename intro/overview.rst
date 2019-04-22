@@ -4,23 +4,21 @@
 预览Scrapy
 ==================
 
-Scrapy is an application framework for crawling web sites and extracting
-structured data which can be used for a wide range of useful applications, like
-data mining, information processing or historical archival.
+Scrapy是一个用于抓取和提取web站点的结构化数据的应用框架
+，可用于广泛的有用的应用程序，如
+数据挖掘、信息处理或历史档案。
 
-Even though Scrapy was originally designed for `web scraping`_, it can also be
-used to extract data using APIs (such as `Amazon Associates Web Services`_) or
-as a general purpose web crawler.
+尽管Scrapy最初是为 `web scraping`_ 而设计的, 但它也可以用API提取数据
+ (例如 `Amazon Associates Web Services`_) 或者作为一个通用的网络爬虫。
 
-
-Walk-through of an example spider
+浏览爬虫器例子
 =================================
 
-In order to show you what Scrapy brings to the table, we'll walk you through an
-example of a Scrapy Spider using the simplest way to run a spider.
+为了向您展示Scrapy带来了什么，我们将用一个Scrapy最简单的方法带您浏览一个
+Scrapy爬虫器的例子。
 
-Here's the code for a spider that scrapes famous quotes from website
-http://quotes.toscrape.com, following the pagination::
+下面是这个爬虫器的代码，它可以从 http://quotes.toscrape.com 网站上抓取名人名言,
+根据以下的页码::
 
     import scrapy
 
@@ -43,15 +41,14 @@ http://quotes.toscrape.com, following the pagination::
                 yield response.follow(next_page, self.parse)
 
 
-Put this in a text file, name it to something like ``quotes_spider.py``
-and run the spider using the :command:`runspider` command::
+把代码放到一个Python文件中，文件名如 ``quotes_spider.py``
+然后用 :command:`runspider` 命令运行这个爬虫器::
 
     scrapy runspider quotes_spider.py -o quotes.json
 
 
-When this finishes you will have in the ``quotes.json`` file a list of the
-quotes in JSON format, containing text and author, looking like this (reformatted
-here for better readability)::
+当它执行完毕后，您会发现目录下多了一个名为 ``quotes.json`` 的文件，文件内容
+是以JSON格式储存的，其中包含名言和作者，格式如下（为了美观进行了排版）::
 
     [{
         "author": "Jane Austen",
@@ -68,7 +65,7 @@ here for better readability)::
     ...]
 
 
-What just happened?
+在此期间发生了什么？
 -------------------
 
 When you ran the command ``scrapy runspider quotes_spider.py``, Scrapy looked for a
