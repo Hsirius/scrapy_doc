@@ -10,7 +10,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
 获得帮助
 ============
 
-遇到困难了？我们乐意帮您解决！
+遇到困难了？我们乐意帮你解决！
 
 * 试试 :doc:`FAQ <faq>` -- 这里有一些常见问题的解答。
 * 寻找具体信息? 试试 :ref:`genindex` or :ref:`modindex`。
@@ -87,7 +87,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     在交互式环境中测试解析程序。
 
 :doc:`topics/items`
-    定义您想要获取的数据。
+    定义你想要获取的数据。
 
 :doc:`topics/loaders`
     将提取的数据填充到项目中。
@@ -96,7 +96,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     处理和保存抓取到的数据。
 
 :doc:`topics/feed-exports`
-    将您抓取到的数据以不同的方式输出储存。
+    将你抓取到的数据以不同的方式输出储存。
 
 :doc:`topics/request-response`
     使用不同的类来实现HTTP的请求和响应。
@@ -128,7 +128,7 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     了解如何在Scrapy上使用Python的内置日志。
 
 :doc:`topics/stats`
-    收集有关您的抓取爬虫的统计数据。
+    收集有关你的抓取爬虫的统计数据。
 
 :doc:`topics/email`
     当某些事件发生时发送电子邮件通知。
@@ -164,10 +164,10 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     获取最常见问题的答案。
 
 :doc:`topics/debug`
-    了解如何Debug调试您的Scrapy爬虫常见问题。
+    了解如何Debug调试你的Scrapy爬虫常见问题。
 
 :doc:`topics/contracts`
-    了解如何使用约束条件来测试您的爬虫爬虫器。
+    了解如何使用约束条件来测试你的爬虫爬虫器。
 
 :doc:`topics/practices`
     熟悉一些Scrapy常见的实践案例。
@@ -182,10 +182,10 @@ Scrapy被广泛用于数据挖掘、监测和自动化测试。
     学习查找和删除爬虫器中的内存泄漏。
 
 :doc:`topics/media-pipeline`
-    从抓取到数据中下载您在item中定义过的文件和图片。
+    从抓取到数据中下载你在item中定义过的文件和图片。
 
 :doc:`topics/deploy`
-    部署您的Scrapy爬虫器并在远程服务器上运行它们。
+    部署你的Scrapy爬虫器并在远程服务器上运行它们。
 
 :doc:`topics/autothrottle`
     根据负载动态调整爬虫速度。
@@ -221,10 +221,10 @@ Scrapy 扩展
     定制爬虫页面如何请求和下载。
 
 :doc:`topics/spider-middleware`
-    自定义您的爬虫器的输入和输出。
+    自定义你的爬虫器的输入和输出。
 
 :doc:`topics/extensions`
-    使用您自定义的函数扩展Scrapy。
+    使用你自定义的函数扩展Scrapy。
 
 :doc:`topics/api`
     在扩展和中间件上使用它来扩展Scrapy功能。
@@ -233,7 +233,7 @@ Scrapy 扩展
     查看所有可用的信号以及如何使用它们。
 
 :doc:`topics/exporters`
-    快速导出您的抓取项目到一个文件(XML, CSV等)。
+    快速导出你的抓取项目到一个文件(XML, CSV等)。
 
 
 其他

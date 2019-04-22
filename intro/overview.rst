@@ -14,7 +14,7 @@ Scrapy是一个用于抓取和提取web站点的结构化数据的应用框架
 浏览爬虫器例子
 =================================
 
-为了向您展示Scrapy带来了什么，我们将用一个Scrapy最简单的方法带您浏览一个
+为了向你展示Scrapy带来了什么，我们将用一个Scrapy最简单的方法带你浏览一个
 Scrapy爬虫器的例子。
 
 下面是这个爬虫器的代码，它可以从 http://quotes.toscrape.com 网站上抓取名人名言,
@@ -47,7 +47,7 @@ Scrapy爬虫器的例子。
     scrapy runspider quotes_spider.py -o quotes.json
 
 
-当它执行完毕后，您会发现目录下多了一个名为 ``quotes.json`` 的文件，文件内容
+当它执行完毕后，你会发现目录下多了一个名为 ``quotes.json`` 的文件，文件内容
 是以JSON格式储存的，其中包含名言和作者，格式如下（为了美观进行了排版）::
 
     [{
@@ -68,7 +68,7 @@ Scrapy爬虫器的例子。
 在此期间发生了什么？
 -------------------
 
-当您运行 ``scrapy runspider quotes_spider.py`` 命令之后, Scrapy 会找到定义的爬虫器，
+当你运行 ``scrapy runspider quotes_spider.py`` 命令之后, Scrapy 会找到定义的爬虫器，
 然后通过爬虫引擎运行它们。
 
 爬虫是通过发送请求给 ``start_urls`` 属性中定义的 url(在本例中，就是 *humor* 分类下的
@@ -84,12 +84,12 @@ Scrapy爬虫器的例子。
 虽然这使得你可以非常快速地进行爬虫（同时可以并发多个请求，在可承载的压力下），
 不过Scrapy同样提供了优雅的爬虫方法，:ref:`简单地配置即可 <topics-settings-ref>`。
 你也可以设置一些其他的参数，比如给下载器设置一个延迟，限制每个域名或者代理IP的并发量，
-甚至可以让Scrapy自动根据请求的响应情况进行:ref:`限流 <topics-autothrottle>`。
+甚至可以让Scrapy自动根据请求的响应情况进行 :ref:`限流 <topics-autothrottle>`。
 
 .. note::
 
     本例中 :ref:`导出 <topics-feed-exports>` 了一个JSON文件,你可以轻易地更改输出格式（比如XML 或者 CSV）或者
-    储存到后端（比如FTP或者`Amazon S3`_ ）。你同样可以定义一个:ref:`item 管道 <topics-item-pipeline>`
+    储存到后端（比如FTP或者`Amazon S3`_ ）。你同样可以定义一个 :ref:`item 管道 <topics-item-pipeline>`
     把这些 item 储存到数据库中。
 
 .. _topics-whatelse:
@@ -100,7 +100,7 @@ What else?
 你已经知道了如何用Scrapy从一个站点提取和储存item，但是仅仅是很浅显的了解它。
 Scrapy还为爬虫提供了很多强大的功能，比如：
 
-* 用内置的 CSS 选择器和 XPath 语法从 HTML/XML 源中:ref:`选择和解析数据 <topics-selectors>`。
+* 用内置的 CSS 选择器和 XPath 语法从 HTML/XML 源中 :ref:`选择和解析数据 <topics-selectors>`。
   甚至可以在其中使用正则表达式来辅助解析。
 
 * 一个 :ref:`交互控制台 <topics-shell>` (IPython aware)，可以用CSS选择器和XPath语法来解析数据，
@@ -112,7 +112,7 @@ Scrapy还为爬虫提供了很多强大的功能，比如：
 * 强大的编码支持和检测,用于处理外部的，不标准的或者损坏的编码。
 
 * :ref:`强大的扩展 <extending-scrapy>`, 允许你植入自己写的函数，:ref:`信号 <topics-signals>` 和定义好
-  的 API(中间件, :ref:`扩展 <topics-extensions>`, 以及:ref:`管道 <topics-item-pipeline>`)。
+  的 API(中间件, :ref:`扩展 <topics-extensions>`, 以及 :ref:`管道 <topics-item-pipeline>`)。
 
 * 广泛的内置扩展功能和中间件处理:
 
@@ -126,8 +126,8 @@ Scrapy还为爬虫提供了很多强大的功能，比如：
 * 一个 :ref:`远程控制台 <topics-telnetconsole>` 用于连接运行在Scrapy进程的Python控制台,
   以便于自省和调试爬虫程序。
 
-* 还有其他好东西，比如从`Sitemaps`_ and XML/CSV 源导入可复用的爬虫, 一个可以自动下载图片（或者其他和items关联的媒体文件）:ref:`
-  的媒体中间件<topics-media-pipeline>`,一个DNS缓存解析器, 以及更多!
+* 还有其他好东西，比如从`Sitemaps`_ and XML/CSV 源导入可复用的爬虫, 一个可以自动下载图片（或者其他和items关联的媒体文件）的 
+  :ref:`媒体中间件<topics-media-pipeline>`,一个DNS缓存解析器, 以及更多!
 
 下一步?
 ============
