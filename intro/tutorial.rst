@@ -4,6 +4,8 @@
 Scrapy 教程
 ===============
 
+在本教程中，我们假设你的系统已经安装了Scrapy，
+如果没有，点击 :ref:`Scrapy安装教程 <intro-install>`。
 In this tutorial, we'll assume that Scrapy is already installed on your system.
 If that's not the case, see :ref:`intro-install`.
 
